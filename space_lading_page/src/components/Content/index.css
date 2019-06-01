@@ -5,3 +5,27 @@
 .font-hour{
     font-size: 32px;
 }
+
+.general-fonts{
+    color: white;
+}
+
+.margin-buttons{
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 70px;
+    height: 50px;
+}
+
+.container-text{
+    width: 100%;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: rgb(221, 133, 17) !important;
+    border-color: rgb(221, 133, 17) !important;
+}
