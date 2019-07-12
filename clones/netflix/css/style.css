@@ -1,0 +1,137 @@
+html body {
+    margin: 0;
+    font-family: 'Heveltica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    background-color: black;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background: linear-gradient(to right, rgba(0,0,0,0.9),rgba(0,0,0,0.05)), url('../img/netflix-background-9.jpg');
+    height: 100vh;
+}
+
+nav img {
+    width: 200px;
+    height: 100px;
+    vertical-align: middle;
+}
+
+nav a.logo {
+    display: inline-block;
+    line-height: 90px;
+}
+
+header nav {
+    height: 90px;
+}
+
+nav .signin {
+    background-color: #e50914;
+    border-radius: 3px;
+    color: #fff;
+    border-color: #e50914;
+    line-height: normal;
+    text-decoration: none;
+    float: right;
+    margin-top: 18px;
+    margin-right: 3%;
+    font-size: 16px;
+    padding: 7px 17px; 
+    font-weight:400;
+    cursor: pointer;
+}
+
+.pitch {
+    margin: 0 3%;
+    position: absolute;
+    top: 35%;
+    font-size: 1.8vw;
+}
+
+.pitch__title {
+    font-size: 3em;
+    margin: 0 0 0.1em 0;
+    font-weight: 700;
+}
+
+.pitch__subtitle {
+    margin: 0 0 0.5em 0;
+}
+
+.join-free-button {
+    background-color: #e50914;
+    border-radius: 3px;
+    color: #fff;
+    border-color: #e50914;
+    line-height: normal;
+    text-decoration: none;
+    float: left;
+    margin-top: 18px;
+    margin-right: 3%;
+    font-size: 16px;
+    padding: 10px 50px; 
+    font-weight:400;
+    cursor: pointer;
+    user-select: none;
+    border: 0;
+    vertical-align: none;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 2px;
+}
+
+ nav .signin:hover, .join-free-button:hover {
+    background: #f40612;
+}
+
+#features > nav {
+    padding-top: 35px;
+    background-color: #141414;
+    border-bottom: 2px solid #3d3d3d; 
+}
+
+#features > nav a {
+    text-decoration: none;
+    text-align: center;
+    vertical-align: top;
+    font-weight: bold;
+    color: #777;
+    height: 125px;
+    line-height: 20px; 
+}
+
+#features > nav a:hover {
+    color: white;
+}
+
+#features > nav a img {
+    height: 49px;
+}
+
+#features > nav a h2 {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+.columns {
+    display: flex;
+}
+
+.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.size-80 {
+    width: 80%;
+}
