@@ -156,7 +156,6 @@ nav .signin {
 
 .center {
     margin: 0 auto;
-    vertical-align: middle;
 }
 
 .size-90 {
@@ -189,6 +188,16 @@ nav .signin {
     padding: 10px;
     height: 300px;
     margin-right: 200px;
+}
+
+.column-content3 {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    height: 200px;
+    margin-right: 50px;
+    font-size: 20px;
+    list-style: none;
 }
 
 #features > nav a.is-selected {
@@ -231,4 +240,13 @@ nav .signin {
 
 #features #watchanywhere p {
     color: #999;
+}
+
+.is-25 {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.foot {
+    margin-top: 500px; 
 }
