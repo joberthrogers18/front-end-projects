@@ -1,9 +1,15 @@
+body,
+html {
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif !important;
+}
+
 .navbar-custom {
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
 }
 
-.custom-a{
+.custom-a {
     color: #ffffff;
     font-size: 22px;
 }
@@ -14,14 +20,15 @@
 }
 
 .header {
-    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.05)), url("../img/spotify-background2.jpg");
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.05)), url("../img/spotify-background2.jpg");
     height: 100vh;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.margin-carousel{
+.margin-carousel {
     margin-top: 2%;
 }
 
@@ -37,7 +44,7 @@
 }
 
 .btn-premium {
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     width: 280px;
     color: #ffffffff;
     border: 2px solid #ffffffff !important;
@@ -54,4 +61,41 @@
     width: 15px !important;
     height: 15px !important;
     border-radius: 100% !important;
+}
+
+.img-album {
+    width: 80%;
+    height: 100%;
+}
+
+.expose {
+    background: linear-gradient(to left, rgba(33, 94, 20, 0.8), rgba(0, 0, 0, 1)), url("../img/albuns.jpg");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mobiles-img {
+    width: 110%;
+    height: 110%;
+    margin-top: 200px;
+}
+
+.color-font-mobile {
+    color:#fff;
+    margin-left: 200px;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.style-title {
+    color: #7e48e5
+}
+
+.play-devises {
+    background-color: #353535;
+    height: 80vh;
+    width: 100%;
 }
