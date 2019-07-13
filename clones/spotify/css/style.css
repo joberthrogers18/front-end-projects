@@ -99,3 +99,7 @@ html {
     height: 80vh;
     width: 100%;
 }
+
+.change-color {
+    color: red !important;
+}
