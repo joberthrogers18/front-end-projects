@@ -1,0 +1,14 @@
+.navbar-custom {
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+}
+
+.custom-a{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.custom-a:hover {
+    color: #d6cece;
+    background-color: #ffffff;
+}
