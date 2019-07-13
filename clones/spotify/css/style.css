@@ -5,10 +5,47 @@
 
 .custom-a{
     color: #ffffff;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .custom-a:hover {
     color: #d6cece;
     background-color: #ffffff;
+}
+
+.header {
+    background: linear-gradient(to right, rgba(0,0,0,0.8),rgba(0,0,0,0.05)), url("../img/spotify-background2.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.margin-carousel{
+    margin-top: 2%;
+}
+
+.carousel-selected {
+    margin-top: 200px;
+}
+
+.btn-free {
+    background: rgb(36, 163, 36);
+    color: #ffffff;
+    width: 280px;
+    border-radius: 25px !important;
+}
+
+.btn-premium {
+    background: rgba(0,0,0,0);
+    width: 280px;
+    color: #ffffffff;
+    border: 2px solid #ffffffff !important;
+    border-radius: 25px !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 100px !important;
+    height: 50px !important;
 }

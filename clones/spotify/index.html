@@ -13,7 +13,7 @@
         <title>Sptify Clone</title>
     </head>
     <body>  
-        <header>
+        <header class="header">
             <nav class="navbar navbar-expand-lg navbar-custom">
                 <div class="row">
                     <div class="col">
@@ -28,28 +28,92 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto font-weight-bold">
-                        <li class="nav-item active">
+                        <li class="nav-item active mr-3">
                             <a class="nav-link custom-a" href="#">Premium<span class="sr-only"></span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-3">
                             <a class="nav-link custom-a" href="#">Help</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-3">
                             <a class="nav-link custom-a" href="#">Dowloads</a>
                         </li>
-                        <li class="nav-item">
-                            <p class="custom-a mt-1 ml-3 mr-3">|</p>
+                        <li class="nav-item mr-3">
+                            <p class="custom-a mt-1 ml-3= mr-3">|</p>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-3">
                             <a class="nav-link custom-a" href="#">Sign in</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item mr-3">
                             <a class="nav-link custom-a" href="#">Log in</a>
                         </li>
                     </ul>
                 </div>
             </nav>
+            <div id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+                <div class="carousel-inner" style=" height: 35vw;">
+                    <div class="carousel-item active">
+                        <div class="row carousel-selected">
+                            <div class="col text-center">
+                                <h1 class="display-1 font-weight-bold text-light">Music for everyone!</h1>
+                            </div>
+                        </div>
+                        <div class="row mt-5">
+                            <div class="col">
+                                    <button type="button" class="btn btn-free float-right mr-2">GET SPOTIFY FREE</button>
+                            </div>
+                            <div class="col">
+                                <button type="button" class="btn btn-premium ml-2">GET SPOTIFY PREMIUM</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="row carousel-selected">
+                                <div class="col text-center">
+                                    <h1 class="display-1 font-weight-bold text-light">Music for everyone!</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col">
+                                        <button type="button" class="btn btn-free float-right mr-2">GET SPOTIFY FREE</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-premium ml-2">GET SPOTIFY PREMIUM</button>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                            <div class="row carousel-selected">
+                                <div class="col text-center">
+                                    <h1 class="display-1 font-weight-bold text-light">Music for everyone!</h1>
+                                </div>
+                            </div>
+                            <div class="row mt-5">
+                                <div class="col">
+                                        <button type="button" class="btn btn-free float-right mr-2">GET SPOTIFY FREE</button>
+                                </div>
+                                <div class="col">
+                                    <button type="button" class="btn btn-premium ml-2">GET SPOTIFY PREMIUM</button>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <a class="carousel-control-prev margin-carousel" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next margin-carousel" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="text-center mt-5">
+                <a href="#" class="text-light font-weight-bold" style="font-size: 20px;">Learn more abour spotify</a>
+            </div>    
         </header>
-        <h1 class="teste">Teste</h1>
     </body>
 </html>
