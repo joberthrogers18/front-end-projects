@@ -49,3 +49,9 @@
     width: 100px !important;
     height: 50px !important;
 }
+
+.carousel-indicators li {
+    width: 15px !important;
+    height: 15px !important;
+    border-radius: 100% !important;
+}
