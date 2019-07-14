@@ -103,3 +103,24 @@ html {
 .change-color {
     color: red !important;
 }
+
+.img-phone {
+    width: 180%;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+
+.margin-expose {
+    margin-top: 10px;
+    margin-left: 300px;
+}
+
+.margin-l {
+    margin-left: 300px;
+}
+
+footer {
+    background-color: black;
+    height: 20vw;
+}
