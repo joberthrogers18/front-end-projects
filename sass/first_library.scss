@@ -119,6 +119,86 @@ $directions: top, right, bottom, left;
   }
 }
 
-body {
-  @extend %u-double-margin-top, %u-no-margin-bottom;
+//display
+
+%u-display-flex {
+  display: flex;
+}
+
+%u-display-block {
+  display: block;
+}
+
+%u-display-none {
+  display: none;
+}
+
+// command to flex-box
+
+%u-flex-direction-row {
+  flex-direction: row;
+}
+
+%u-flex-direction-column {
+  flex-direction: column;
+}
+
+// behavior wrapper
+
+%u-flex-wrap {
+  flex-wrap: wrap;
+}
+
+%u-flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+%u-flex-wrap-nowrap {
+  flex-wrap: nowrap;
+}
+
+// align content flex
+
+%u-flex-align-items-center {
+  align-items: center;
+}
+
+%u-flex-align-items-flex-start {
+  align-items: flex-start;
+}
+
+%u-flex-align-items-flex-end {
+  align-items: flex-end;
+}
+
+%u-flex-align-items-stretch {
+  align-items: stretch;
+}
+
+%u-flex-align-items-baseline {
+  align-items: baseline;
+}
+
+%u-flex-justifly-content-center {
+  justify-content: center;
+}
+
+%u-flex-justifly-content-flex-start {
+  justify-content: flex-start;
+}
+
+%u-flex-justifly-content-flex-end {
+  justify-content: flex-end;
+}
+
+%u-flex-justifly-content-space-around {
+  justify-content: space-around;
+}
+
+%u-flex-justifly-content-space-between {
+  justify-content: space-between;
+}
+
+%u-flex-total-center {
+  @extend %u-flex-align-items-center, %u-flex-justifly-content-center;
 }
