@@ -22,11 +22,13 @@ body {
 }
 
 .face {
-    border: 2px solid #000;
+    border: 4px solid #000;
     border-radius: 500px;
     width: 700px;
     height: 700px;
-    flex-direction: row;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
     background: #FFD700;
 }
 
@@ -38,11 +40,35 @@ body {
 }
 
 .eye {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border: 5px solid #000;
     border-radius: 100px;
     margin-left: 40px;
     margin-right: 40px;
     background-color: #FFF;
+    display: flex;
+    justify-content: center;
+}
+
+.pupil {
+    width: 70px;
+    height: 30px;
+    border-bottom-left-radius: 75% 100%;
+    border-bottom-right-radius: 75% 100%;
+    border-top-left-radius: 75% 100%;
+    border-top-right-radius: 75% 100%;
+    background: #000;
+    margin-top: 10px;
+}
+
+.mouth {
+    width: 250px;
+    height: 40px;
+    margin-top: 150px;
+    background-color: #000;
+    border-bottom-left-radius: 75% 100%;
+    border-bottom-right-radius: 75% 100%;
+    border-top-left-radius: 75% 100%;
+    border-top-right-radius: 75% 100%;
 }
