@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <style type="text/css">
+    .common {
+      width: 200px;
+      height: 200px;
+      margin: 2px;
+      padding: 20px;
+    }
+
+    #square{
+      background-color: #8AC007;
+      border-radius: 25px;
+      color: #FFF;
+    }
+
+    #square2 {
+      border: 50px solid transparent;
+      border-image-source: url('data:image/png;base64,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');
+      border-image-repeat: repeat;
+      border-image-slice: 100;
+      border-image-width: 20px;
+    }
+
+    .images-example {
+      background-image: url('https://i1.wp.com/www.multarte.com.br/wp-content/uploads/2019/03/pikachu-pokemon-go-seniors.png?w=696&ssl=1https://i1.wp.com/www.multarte.com.br/wp-content/uploads/2019/03/pikachu-pokemon-go-seniors.png?w=696&ssl=1'), 
+      url('https://clipart.info/images/ccovers/1528080672Cute-Charmander-Pokemon-Png.png'),
+      url('https://images.unsplash.com/photo-1530982011887-3cc11cc85693?ixlib=rb-1.2.1&w=1000&q=80');
+      width: 2048px;
+      height: 1024px;
+      background-position: right bottom, left top, left bottom;
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      margin-top: 50px;
+      background-size: 15%, 15%, cover;
+    }
+
+    .gradient {
+      height: 250px;
+      width: 500px;
+      margin-top: 100px;
+    }
+
+    .gradient1 {
+      background: -webkit-linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+      background: -o-linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+      background: -moz-linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+      background: linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+    }
+
+    .gradient2 {
+      background: -webkit-radial-gradient(#464159 5%, #8bbabb 15%, #c7f0db 60%);
+      background: -o-radial-gradient(#464159 5%, #8bbabb 15%, #c7f0db 60%);
+      background: -moz-radial-gradient(#464159 5%, #8bbabb 15%, #c7f0db 60%);
+      background: radial-gradient(#464159 5%, #8bbabb 15%, #c7f0db 60%);
+    }
+
+    .gradient3 {
+      background: -webkit-repeating-radial-gradient(#464159 , #8bbabb 10%, #c7f0db 15%);
+      background: -o-repeating-radial-gradient(#464159 , #8bbabb 10%, #c7f0db 15%);
+      background: -moz-repeating-radial-gradient(#464159 , #8bbabb 10%, #c7f0db 15%);
+      background: repeating-radial-gradient(#464159 , #8bbabb 10%, #c7f0db 15%);
+    }
+
+    button.gradient-btn {
+      width: 200px;
+      height: 40px;
+      margin-top: 50px;
+      border: 2px solid #999;
+      border-radius: 5px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      background-color: transparent;
+      cursor: pointer;
+    }
+
+    button.gradient-btn:hover {
+      background: -webkit-linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+      background: -o-linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+      background: -moz-linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+      background: linear-gradient(left top,#464159, #8bbabb, #c7f0db);
+      color: #FFF; 
+    }
+
+    h1 {
+      text-shadow: 2px 2px;
+    }
+
+    h2 {
+      text-shadow: 2px 2px red;
+    }
+
+    h3 {
+      text-shadow: 2px 2px 5px red;
+    }
+
+    h4 {
+      color: white;
+      text-shadow: -10px -5px 1px #000000; 
+    }
+
+    h5 {
+      text-shadow: 0 0 3px #FF0000;
+    }
+    h6 {
+      text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    }
+    p {
+      color: white;
+      text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    }
+
+    .shadow-box {
+      width: 500px;
+      height: 500px;
+      margin-top: 100px;
+      background-color: #6C7B95;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      color: #FFF;
+      box-shadow: 5px 6px 3px #999;
+
+    }
+
+    .text-titles {
+      text-shadow: none;
+      color: #000000;
+    }
+
+    p.text1 {
+      /* white-space: nowrap;
+      width: 500px;
+      border: 1px solid #999;
+      overflow: hidden;
+      text-overflow: clip; */
+
+      width: 140px;
+      border: 1px solid #999;
+      word-break: keep-all;
+    }
+
+    p.text2 {
+      /* white-space: nowrap; 
+      width: 500px; 
+      border: 1px solid #000000;
+      overflow: hidden;
+      text-overflow: ellipsis; */
+
+      width: 140px; 
+      border: 1px solid #000000;
+      word-break: break-all;
+    }
+
+    .test-text {
+      word-wrap: break-word;
+    }
+
+    @font-face {
+      font-family: myFirstFont;
+      src: url('https://fonts.googleapis.com/css?family=Lobster&display=swap&subset=cyrillic-ext');
+    }
+
+    .font-web{
+      font-family: myFirstFont;
+    }
+  </style>
+  
+  <h1 class="text-titles">Exemplos do site tutorials point</h1>
+
+  <h2 class="text-titles">border</h2>
+
+  <div id="square"  class="common">Rounded corners</div>
+  <div id="square2" class="common">Rounded corners</div>
+  
+  <h2 class="text-titles">Imagem background</h2>
+
+  <div class="images-example"></div>
+
+  <h2 class="text-titles">Gradiente</h2>
+
+  <div class="gradient gradient1"></div>
+  <div class="gradient gradient2"></div>
+  <div class="gradient gradient3"></div>
+  <button class="gradient-btn">Teste button</button>
+
+  <h2 class="text-titles">Shadow</h2>
+
+  <h1>Meu exemplo</h1>
+  <h2>Meu exemplo</h2>
+  <h3>Meu exemplo</h3>
+  <h4>Meu exemplo</h4>
+  <h5>Meu exemplo</h5>
+  <h6>Meu exemplo</h6>
+  <p>Meu exemplo</p>
+
+  <div class="shadow-box">
+    Teste
+  </div>
+
+  <h2 class="text-titles">Texts</h2>
+
+  <p class="text-titles">
+      Tutorials Point originated from the idea that there exists a class of 
+      readers who respond better to online content and prefer to learn new 
+      skills at their own pace from the comforts of their drawing rooms.
+   </p>
+   
+   <b >Text overflow:clip:</b>
+
+   <p class = "text1 text-titles">
+      Tutorials Point originated from the idea that there exists
+      a class of readers who respond better to online content and prefer 
+      to learn new skills at their own pace from the comforts of their 
+      drawing rooms.
+   </p>
+   
+   <b>Text overflow:ellipsis</b>
+
+   
+   <p class = "text2 text-titles">
+     Tutorials Point originated from the idea that there exists
+     a class of readers who respond better to online content and 
+     prefer to learn new skills at their own pace from the comforts 
+     of their drawing rooms.
+    </p>
+    
+    <p class="test-text">
+    jfsdakljflsajkfja your mom say hi jenkins!!! Tutorials Point originated from the idea that there exists
+    a class of readers who respond better to online content and 
+    prefer to learn new skills at their own pace from the comforts 
+    of their drawing rooms.
+
+    </p>
+
+    <h3 class="text-titles">Web-Font</h3>
+
+    <p class="font-web text-titles">Olá tudo bem bando de fdp</p>
+</body>
+</html>
