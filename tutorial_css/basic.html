@@ -172,6 +172,101 @@
     .font-web{
       font-family: myFirstFont;
     }
+
+    div.general div {
+      width: 300px;
+      height: 100px;
+      background-color: pink;
+      border: 1px solid #000000;
+      margin-top: 10px;
+      padding: 20px;
+    }
+
+    div#myDiv {
+      -ms-transform: rotate(20deg);
+      -webkit-transform: rotate(20deg);
+      transform: rotate(20deg);
+    }
+
+    div#bellowDiv {
+      -ms-transform: rotate(-20deg);
+      -webkit-transform: rotate(-20deg);
+      transform: rotate(-20deg);
+    }
+
+    div.axisX {
+      -ms-transform: skewX(-30deg);
+      -webkit-transform: skewX(-20deg);
+      transform: skewX(30deg);      
+    }
+
+    div#myDiv2 {
+            /* IE 9 */
+            -ms-transform: matrix(1, 0, 0.5, 1, 150, 0);
+            
+            /* Safari */	
+            -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0);
+            
+            /* Standard syntax */
+            transform: matrix(1, 0, 0.5, 1, 150, 0); 
+         }   
+
+    @keyframes animation {
+      from {
+        background-color: pink;
+        color: #000000;
+      }
+
+      to {
+        background-color: green;
+        color:#FFF;
+      }
+    }
+
+    div.my-animation {
+      width: 150px;
+      height: 150px;
+      background-color: red;
+      animation-name: animation;
+      animation-duration: 5s;
+    } 
+
+    div.text-animation h1 {
+      -moz-animation-duration: 3s;
+      -webkit-animation-duration: 3s;
+      -moz-animation-name: slidein;
+      -webkit-animation-name: slidein;
+    }
+
+    @-moz-keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+
+    @-webkit-keyframes slidein {
+      from {
+        margin-left: 100%;
+        width: 300%;
+      }
+
+      75% {
+        color: red;
+        font-size: 150px;
+      }
+
+      to {
+        margin-left: 0%;
+        width: 100%;
+      }
+    }
+  
   </style>
   
   <h1 class="text-titles">Exemplos do site tutorials point</h1>
@@ -244,5 +339,37 @@
     <h3 class="text-titles">Web-Font</h3>
 
     <p class="font-web text-titles">Olá tudo bem bando de fdp</p>
+
+
+    <h2 class="text-titles">2d Transform</h2>
+
+    <div class="general">
+      <div>
+        Tutorial
+      </div>
+      <div id="myDiv">
+        Tutorial
+      </div>
+      <div id="bellowDiv">
+        Tutorial
+      </div>
+      <div class="axisX">
+        Tutorial
+      </div>
+      <div id="myDiv2">
+        Tutorial
+      </div>
+    </div>
+
+    <h2 class="text-titles">Animations</h2>
+
+    <div class="my-animation">
+      Teste
+    </div>
+
+    <div class="text-animation">
+      <h1>Tutorial animation</h1>
+    </div>
+
 </body>
 </html>
