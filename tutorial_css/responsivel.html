@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  
+  <style>
+    body {
+      font: 600 14px/24px "Open Sans",
+      "HelveticaNeue-Light",
+      "Helvetica Neue Light",
+      "Helvetica Neue",
+      Helvetica, Arial,
+      "Lucida Grande",
+      Sans-Serif;
+    }  
+
+    h1 {
+      color: #9799a7;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 6px;
+    }
+
+    .container::before, .container::after {
+      content: "";
+      display: table;
+    }
+
+    .container::after {
+      clear: both;
+    }
+
+    .container {
+      background: #aeeaed;
+      margin-bottom: 24px;
+      *zoom: 1;
+    }
+
+    .container-75 {
+      width: 75%;
+    }
+
+    .container-50 {
+      width: 50%;
+      margin-bottom: 0;
+    }
+
+    .container, aside, section {
+      border-radius: 6px;
+    }
+
+    section, aside {
+      background: #2db34a;
+      color: #FFF;
+      margin: 1.858736059%;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    section {
+      float: left;
+      width: 63.197026%;
+    }
+
+    aside {
+      float: right;
+      width: 29.3680297%;
+    }
+
+    div.media-responsible {
+      width: 500px;
+      height: 500px;
+      background-color: lightpink;
+    }
+    @media screen and (max-width: 420px) {
+      div.media-responsible {
+          background-color: lightblue;
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        background-color: #621055;
+      }
+
+      25% {
+        background-color: #b52b65;
+      }
+
+      75% {
+        background-color: #ed6663;
+      }
+
+      100% {
+        background-color: #ffa372;
+      }
+    }
+
+    @-webkit-keyframes pulse {
+      0% {
+        background-color: #621055;
+      }
+
+      25% {
+        background-color: #b52b65;
+      }
+
+      75% {
+        background-color: #ed6663;
+      }
+
+      100% {
+        background-color: #ffa372;
+      }
+    }
+    
+    @-moz-keyframes pulse {
+      0% {
+        background-color: #621055;
+      }
+
+      25% {
+        background-color: #b52b65;
+      }
+
+      75% {
+        background-color: #ed6663;
+      }
+
+      100% {
+        background-color: #ffa372;
+      }
+    }
+
+    div.pulse-element {
+      width: 500px;
+      height: 500px;
+      margin-top: 100px;
+    }
+
+    div.pulse-element:hover {
+      -webkit-animation: pulse 5s infinite;
+      -moz-animation: pulse 5s infinite;
+      animation: pulse 5s infinite;
+    }
+
+    div.element {
+      height: 250px;
+      width: 250px;
+      margin: 0 auto;
+      background-color: #621055; 
+      border: none;
+      border-radius: 10px;
+      animation-name: stretch;
+      animation-duration: 5s;
+      animation-timing-function: ease-in;
+      animation-delay: 0s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-play-state: running; 
+
+
+    }
+
+    @keyframes stretch {
+      0% {
+        transform: scale(.3);
+        background-color: #b52b65;
+        border-radius: 100%;
+      }
+
+      50% {
+        background-color: #ed6663;
+      }
+
+      100% {
+        transform: scale(1.5);
+        background-color: #ffa372;
+      }
+    }
+
+    @keyframes pulse-2 {
+      0%, 100% {
+        background-color: #da2d2d;
+        transform: scale(1.2);
+        border-radius: 100%;
+      }
+
+      50% {
+        background-color: #eb8242;
+        transform: scale(0.8);
+        border-radius: 20%;
+      }
+    }
+    
+    .test-trasform {
+      margin-top: 1000px;
+      height: 500px;
+      width: 500px;
+      margin: 400px auto 0 auto;
+      background-color: #9d0b0b;
+      border-radius: 50px;
+      animation: pulse-2 10s infinite;
+    }
+
+  </style>
+</head>
+<body>
+  <h1>100% do container</h1>
+
+  <div class="container">
+    <section>Section</section>
+    <aside>Aside</aside>
+  </div>
+
+  <h1>75% Wide Container</h1>
+      
+  <div class = "container container-75">
+      <section>Section</section>
+      <aside>Aside</aside>
+  </div>
+  
+  <h1>50% Wide Container</h1>
+  
+  <div class = "container container-50">
+      <section>Section</section>
+      <aside>Aside</aside>
+  </div>
+
+  <h1>Media Responsible</h1>
+
+  <div class="media-responsible">
+    <p>
+      If screen size is less than 420px, then it will show lightblue 
+      color, or else it will show light pink color
+    </p>
+  </div>
+
+  <h1>Animation examples</h1>
+
+  <div class="pulse-element"></div>
+
+  <div class="element"></div>
+
+  <div class="test-trasform"></div>
+</body>
+</html>
