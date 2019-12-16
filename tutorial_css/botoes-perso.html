@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 50px;
+      background-color: #1b2a49;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    button {
+      width: 190px;
+      height: 45px;
+      margin-top: 100px;
+    }
+
+    .container button.btn1 {
+      border: 3px solid #FFF;
+      border-radius: 25px;
+      color: #FFF;
+      font-size: 16px;
+      font-weight: bold;
+      background-color: #ffd369;
+      cursor: pointer;
+      animation: shake-btn1 3s 1s infinite;
+      transition: 2s;
+    }
+
+    button.btn1:hover {
+      animation: pulse 0.2s infinite;
+    }
+
+    @keyframes pulse {
+      from {
+        transform: scale(1.2, 1.2);
+      }
+
+      to {
+        transform: scale(1.5, 1.5);
+      }
+    }
+
+    @keyframes shake-btn1 {
+      10% {
+        transform: scale(1.5, 1.5);
+      }
+
+      30% {
+        transform: scale(1.5,1.5);
+      }
+
+      40% {
+        transform: rotate(-10deg) scale(1.5, 1.5);
+      }
+
+      50% {
+        transform: rotate(10deg) scale(1.5, 1.5);
+      }
+
+      60% {
+        transform: rotate(-5deg) scale(1.5, 1.5);
+      }
+
+      80% {
+        transform: rotate(5deg) scale(1.5, 1.5);
+      }
+
+      100% {
+        transform: rotate(0deg) scale(1.5, 1.5);
+      }
+    }
+
+    .btn2 {
+      border: 3px solid #FFF;
+      border-radius: 25px;
+      color: rgb(122, 56, 56);
+      font-weight: bold;
+      font-size: 18px;
+      /* background-color: orange; */
+      background: radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, #FFF 3px, #FFF);
+      /* animation: pulse-btn2 2s linear infinite,
+                 pulsing1 2s linear infinite; */
+    }
+
+  @keyframes pulsing1 {
+    0% {
+      opacity: 1;
+      transform: scaleY(1) scaleX(1);
+    }
+    20% {
+      opacity: 0.5;
+    }
+    70% {
+      opacity: 0.2;
+      transform: scaleY(1.3) scaleX(1.15);
+    }
+    80% {
+      opacity: 0;
+      transform: scaleY(1.3) scaleX(1.15);
+    }
+    90% {
+      opacity: 0;
+      transform: scaleY(1) scaleX(1);
+    }
+  }
+
+    @keyframes pulse-btn2 {
+      0% {
+        opacity: 1;
+        transform: scaleY(1) scaleX(1);
+      }
+      20% {
+        opacity: 0.5;
+      }
+      70% {
+        opacity: 0.2;
+        transform: scaleY(1.3) scaleX(1.15);
+      }
+      80% {
+        opacity: 0;
+        transform: scaleY(1.3) scaleX(1.15);
+      }
+      90% {
+        opacity: 0;
+        transform: scaleY(1) scaleX(1);
+      }
+    }
+    
+    .teste{
+      width: 250px;
+      height: 250px;
+      background-color: #FFF;
+      border: 2px solid #000;
+      margin-top: 100px;
+    }
+
+    .teste figure {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      transform: translate(200%, 200%);
+      background-color: #FFF;
+      border: #000;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <button class="btn1">Botão 1</button>
+    <button class="btn2">Botão 2</button>
+    <button class="bubble-btn">Bubbles</button>
+  </div>
+
+  <div class="cont">
+    <div class="button">
+      <p><span>Home</span></p>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+    </div>
+    <div class="button">
+      <p><span>Products</span></p>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+    </div>
+    <div class="button">
+      <p><span>About</span></p>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+    </div>
+    <div class="button">
+      <p><span>COntact</span></p>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+    </div>
+
+    <div class="teste">
+      <figure></figure>
+    </div>
+
+    <div class="btn-anim">
+      <figure></figure>
+      <p>Bubble btn</p>
+      <figure></figure>
+      <figure></figure>
+      <figure></figure>
+    </div>
+  </div>
+</body>
+</html>

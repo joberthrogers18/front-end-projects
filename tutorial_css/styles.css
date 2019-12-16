@@ -1,0 +1,169 @@
+.cont {
+  width: 270px;
+  position: relative;
+  margin: 60px auto;
+}
+
+.button {
+  width: 120px;
+  height: 60px;
+  background-color: white;
+  position: relative;
+  border: 3px solid black;
+  margin-bottom: 10px;
+
+}
+
+.button p {
+  width: 154px;
+  height: 54px;
+  background-color: white;
+  line-height: 60px;
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  z-index: 10;
+  font-weight: 900;
+}
+
+.button figure {
+  position: absolute;
+  top: 50%; left: 50px;
+  width: 20px;
+  height: 20px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 50%;
+  border: 3px solid black;
+  z-index: 1;
+  transition-delay: 0;
+}
+
+.button figure:nth-of-type(2){
+  transition-delay: 1.2s;
+}
+
+.button figure:nth-of-type(3){
+  transition-delay: .6s;
+}
+
+.button figure:nth-of-type(4){
+  transition-delay: .2s;
+}
+
+.button:hover figure:nth-of-type(1) {
+  top: 5px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+  transition: .5s ease-out;
+}
+.button:hover figure:nth-of-type(2) {
+  top: 60px;
+  left: 175px;
+  width: 20px;
+  height: 20px;
+  transition: 1.2s ease-out;
+}
+.button:hover figure:nth-of-type(3) {
+  top: 10px;
+  left: 135px;
+  width: 80px;
+  height: 80px;
+  transition: .8s ease-out;
+}
+.button:hover figure:nth-of-type(4) {
+  top: -10px;
+  left: 25px;
+  width: 10px;
+  height: 10px;
+  transition: .5s ease-out;
+}
+
+/* button animation*/
+
+.btn-anim {
+  width: 250px;
+  height: 60px;
+  border: 2px solid #FFF;
+  margin-top: 100px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-anim figure {
+  border: transparent;
+  border-radius: 50%;
+}
+
+.btn-anim figure:nth-of-type(1) {
+  width: 10px;
+  height: 10px;
+  animation: bubbles 4s 1.5s infinite;
+} 
+
+.btn-anim figure:nth-of-type(2) {
+  width: 20px;
+  height: 20px;
+  animation: bubbles-2 4s 3s infinite;
+} 
+
+.btn-anim figure:nth-of-type(3) {
+  width: 5px;
+  height: 5px;
+  animation: bubbles-3 4s 2s infinite;
+} 
+
+.btn-anim figure:nth-of-type(4) {
+  width: 15px;
+  height: 15px;
+  animation: bubbles-3 4s 2.2s infinite;
+} 
+
+@keyframes bubbles {
+  from {
+    border: 1px solid #FFF;
+    transform: translate(10px, 90px);
+  }
+
+  to {
+    border: 1px solid #FFF;
+    transform: translate(10px, -100px);
+  }
+}
+
+@keyframes bubbles-2 {
+  from {
+    border: 1px solid #FFF;
+    transform: translate(50px, 120px);
+  }
+
+  to {
+    border: 1px solid #FFF;
+    transform: translate(50px, -120px);
+  }
+}
+
+@keyframes bubbles-3 {
+  from {
+    border: 1px solid #FFF;
+    transform: translate(120px, 120px);
+  }
+
+  to {
+    border: 1px solid #FFF;
+    transform: translate(120px, -100px);
+  }
+}
+
+.btn-anim p {
+  color: #FFF;
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 30px;
+}
+
+
+
