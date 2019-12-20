@@ -15,11 +15,12 @@ header.external-header {
     height: 100vh;
     background-image: linear-gradient(to bottom right, #b21f66, #ffbd69);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #FFF;
+    padding: 150px;
 }
 
 .informations {
@@ -55,9 +56,114 @@ img.profile-img {
     width: 240px;
     height: 240px;
     align-self: center;
+    margin-top: 20px;
     margin-bottom: 20px;
     border: 10px solid #FFF;
     border-radius: 50%;
+}
+
+@media screen and ( max-width: 499px ) { 
+    header.external-header { 
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    img.profile-img {
+        width: 150px;
+        height: 150px;
+        border-width: 6px;
+        margin-top: 40px;
+    }
+
+    .informations p:nth-of-type(1) {
+        font-size: 18px;
+    }
+    
+    .informations p:nth-of-type(2) {
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    
+    .informations p:nth-of-type(3) {
+        width: 90%;
+        text-align: justify;
+        align-self: center;
+        margin-bottom: 130px;
+    }
+    
+    .informations p {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and ( min-width: 500px ) and ( max-width: 799px ) { 
+    header.external-header { 
+        flex-direction: column;
+        padding: 70px;
+    }
+
+    img.profile-img {
+        width: 200px;
+        height: 200px;
+        border-width: 6px;
+        margin-top: 100px;
+    }
+
+    .informations p:nth-of-type(1) {
+        font-size: 25px;
+    }
+    
+    .informations p:nth-of-type(2) {
+        font-size: 40px;
+        letter-spacing: 5px;
+        width: 110%;
+    }
+    
+    .informations p:nth-of-type(3) {
+        width: 100%;
+        text-align: justify;
+        align-self: center;
+        margin-bottom: 150px;
+    }
+    
+    .informations p {
+        font-size: 17px;
+    }
+}
+
+@media screen and ( min-width: 800px ) and ( max-width: 1150px ) { 
+    header.external-header { 
+        flex-direction: column;
+        padding: 70px;
+    }
+
+    img.profile-img {
+        width: 200px;
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    .informations p:nth-of-type(1) {
+        font-size: 30px;
+    }
+    
+    .informations p:nth-of-type(2) {
+        font-size: 60px;
+        letter-spacing: 5px;
+    }
+    
+    .informations p:nth-of-type(3) {
+        width: 100%;
+        text-align: justify;
+        align-self: center;
+        margin-bottom: 150px;
+    }
+    
+    .informations p {
+        font-size: 21px;
+    } 
+
 }
 
 
