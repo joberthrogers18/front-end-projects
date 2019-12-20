@@ -11,16 +11,22 @@ body {
 }
 
 header.external-header {
+    display: flex;
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to bottom right, #b21f66, #ffbd69);
-    display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: row;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #FFF;
     padding: 150px;
+    flex-direction: column;
+}
+
+.general-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
 }
 
 .informations {
@@ -60,6 +66,37 @@ img.profile-img {
     margin-bottom: 20px;
     border: 10px solid #FFF;
     border-radius: 50%;
+}
+
+.external-header i {
+    animation: ani-fade 1.5s infinite;
+    cursor: pointer;
+}
+
+@keyframes ani-fade {
+    0% {
+        opacity: 1;
+    }
+
+    15% {
+        opacity: 0.8;
+    }
+
+    25% {
+        opacity: 0.6
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    75% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @media screen and ( max-width: 499px ) { 
