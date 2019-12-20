@@ -15,7 +15,7 @@ header.external-header {
     width: 100%;
     height: 100vh;
     background-image: linear-gradient(to bottom right, #b21f66, #ffbd69);
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: #FFF;
@@ -27,6 +27,7 @@ header.external-header {
     display: flex;
     flex-direction: row;
     margin-top: 30px;
+    margin-bottom: 150px;
 }
 
 .informations {
@@ -69,7 +70,7 @@ img.profile-img {
 }
 
 .external-header i {
-    animation: ani-fade 1.5s infinite;
+    animation: ani-fade 1s infinite;
     cursor: pointer;
 }
 
@@ -78,19 +79,19 @@ img.profile-img {
         opacity: 1;
     }
 
-    15% {
+    20% {
         opacity: 0.8;
     }
 
-    25% {
+    40% {
         opacity: 0.6
     }
 
-    50% {
+    60% {
         opacity: 0.4;
     }
 
-    75% {
+    80% {
         opacity: 0.2;
     }
 
@@ -100,16 +101,20 @@ img.profile-img {
 }
 
 @media screen and ( max-width: 499px ) { 
-    header.external-header { 
+    
+    header.external-header {
+        padding: 0px;
+    }
+    
+    .general-info { 
         flex-direction: column;
-        padding: 10px;
+        margin-bottom: 30px;
     }
 
     img.profile-img {
         width: 150px;
         height: 150px;
         border-width: 6px;
-        margin-top: 40px;
     }
 
     .informations p:nth-of-type(1) {
@@ -125,7 +130,6 @@ img.profile-img {
         width: 90%;
         text-align: justify;
         align-self: center;
-        margin-bottom: 130px;
     }
     
     .informations p {
@@ -135,16 +139,20 @@ img.profile-img {
 }
 
 @media screen and ( min-width: 500px ) and ( max-width: 799px ) { 
-    header.external-header { 
+    
+    header.external-header {
+        padding: 10px;
+    }
+    
+    .general-info { 
         flex-direction: column;
-        padding: 70px;
+        margin-bottom: 30px;
     }
 
     img.profile-img {
         width: 200px;
         height: 200px;
         border-width: 6px;
-        margin-top: 100px;
     }
 
     .informations p:nth-of-type(1) {
@@ -154,14 +162,12 @@ img.profile-img {
     .informations p:nth-of-type(2) {
         font-size: 40px;
         letter-spacing: 5px;
-        width: 110%;
     }
     
     .informations p:nth-of-type(3) {
         width: 100%;
         text-align: justify;
         align-self: center;
-        margin-bottom: 150px;
     }
     
     .informations p {
@@ -170,15 +176,19 @@ img.profile-img {
 }
 
 @media screen and ( min-width: 800px ) and ( max-width: 1150px ) { 
-    header.external-header { 
+    
+    header.external-header {
+        padding: 10px;
+    }
+    
+    .general-info { 
         flex-direction: column;
-        padding: 70px;
+        margin-bottom: 30px;
     }
 
     img.profile-img {
         width: 200px;
         height: 200px;
-        margin-top: 100px;
     }
 
     .informations p:nth-of-type(1) {
@@ -194,7 +204,6 @@ img.profile-img {
         width: 100%;
         text-align: justify;
         align-self: center;
-        margin-bottom: 150px;
     }
     
     .informations p {
