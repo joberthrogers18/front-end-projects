@@ -314,16 +314,17 @@ img.profile-img {
 .competences .grid-competences {
     display: grid;
     grid-template-columns: auto auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 100px;
-    width: 90%;
-    height: 90%;
-    padding: 20px;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    width: 70%;
+    height: 80%;
     border-radius: 10px;
+    justify-items: center;
+    align-items: center;
 }
 
 .grid-competences .item {
-    background-color: rgba(230, 229, 229, 0.7);
+    background-color: rgba(230, 229, 229);
     text-align: center;
     font-size: 30px;
     border: none;
@@ -331,19 +332,61 @@ img.profile-img {
     box-shadow: 3px 3px 5px #000;
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 0 4px;
+    width: 40%;
+    height: 50%;
+    justify-content: center;
 }
 
 .grid-competences .item img {
-    width: 110px;
-    height: 110px;
+    width: 60%;
+    height: 70%;
 }
 
 img.color-img {
     display: none;
 }
 
+.item .info-competence {
+    display: none;
+}
+
+.info-competence p {
+    font-size: 10px;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.percentage {
+    width: 70px;
+    height: 10px;
+    border: 1px solid #000000;
+    margin-bottom: 5px;
+}
+
 .item:hover {
-    color: #FFF;
+    transform: scale(2, 2);
+    transition: 1.5s;
+    display: flex;
+    flex-direction: row;
+}
+
+.item:hover > .info-competence {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.item:hover > img.color-img {
+    width: 40%;
+    height: 40%;
+}
+
+
+.line {
+    height: 100%;
+    width: 0%;
+    background: transparent;
 }
 
