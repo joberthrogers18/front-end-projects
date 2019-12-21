@@ -71,10 +71,91 @@ img.profile-img {
 
 .external-header i {
     animation: ani-fade 1s infinite;
+    -o-animation: ani-fade 1s infinite;
+    -webkit-animation: ani-fade 1s infinite;
+    -moz-animations: ani-fade 1s infinite;
     cursor: pointer;
 }
 
 @keyframes ani-fade {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    40% {
+        opacity: 0.6
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes ani-fade {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    40% {
+        opacity: 0.6
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes ani-fade {
+    0% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    40% {
+        opacity: 0.6
+    }
+
+    60% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes ani-fade {
     0% {
         opacity: 1;
     }
@@ -211,5 +292,6 @@ img.profile-img {
     } 
 
 }
+
 
 
