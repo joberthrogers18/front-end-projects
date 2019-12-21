@@ -333,8 +333,8 @@ img.profile-img {
     display: flex;
     align-items: center;
     padding: 0 4px;
-    width: 40%;
-    height: 50%;
+    width: 50%;
+    height: 60%;
     justify-content: center;
 }
 
@@ -343,8 +343,9 @@ img.profile-img {
     height: 70%;
 }
 
-img.color-img {
+i.color-img {
     display: none;
+    margin-right: 2px;
 }
 
 .item .info-competence {

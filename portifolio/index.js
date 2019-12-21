@@ -9,7 +9,7 @@ color_array = ["#2aabde", "#f0662b", "#f0bd26", "#007ab3", "#e82a30", "#4eb5ab",
 html_comp.forEach((competence, index) => {
 
     competence.addEventListener("mouseover", function() {
-        var images = competence.querySelectorAll('img');
+        var images = competence.querySelectorAll('i');
         images[0].style.display = "none";
         images[1].style.display = "inline";
         let line = competence.querySelector('.line');
@@ -18,28 +18,8 @@ html_comp.forEach((competence, index) => {
     });
 
     competence.addEventListener("mouseout", function() {
-        var images = competence.querySelectorAll('img');
+        var images = competence.querySelectorAll('i');
         images[1].style.display = "none";
         images[0].style.display = "inline";
     });
 })
-
-// for (let competence of html_comp) {
-    
-//     competence.addEventListener("mouseover", function() {
-//         var images = competence.querySelectorAll('img');
-//         images[0].style.display = "none";
-//         images[1].style.display = "inline";
-//         let line = document.querySelectorAll('.line')[0];
-//         line.style.transition = "all 5s";
-//         line.style.width = "10%";
-//         line.style.backgroundColor = "red";
-//     });
-
-//     competence.addEventListener("mouseout", function() {
-//         var images = competence.querySelectorAll('img');
-//         images[1].style.display = "none";
-//         images[0].style.display = "inline";
-//     });
-
-// }
