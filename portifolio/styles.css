@@ -8,7 +8,7 @@
 }
 
 body {
-    background-color: #111d5e;
+    background-color: #32407b;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     display: flex;
     flex-direction: column;
@@ -19,7 +19,7 @@ header.external-header {
     display: flex;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to bottom right, #b21f66, #ffbd69);
+    background-image: linear-gradient(to bottom right, #151965, #4d80e4);
     justify-content: center;
     align-items: center;
     color: #FFF;
