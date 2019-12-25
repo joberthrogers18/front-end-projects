@@ -322,6 +322,8 @@ img.profile-img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    cursor: default;
+    outline: none;
 }
 
 .competences h1 {
@@ -583,6 +585,247 @@ footer h1 {
 .cont-container:hover > .icon-cont {
     color: #000;
 } 
+
+@media screen and ( min-width: 0px ) and ( max-width: 499px ) {
+    
+    .item:hover {
+        transform: none;
+        transition: none;
+    }
+    
+    .item:hover > .info-competence {
+        display: none;
+    }
+
+    .content .project, .experiences .experience {
+        flex-direction: column;
+    }
+
+    .projects {
+        width: 100%;
+        padding: 2px 5px;
+    }
+
+    .content .project:nth-of-type(2), .content .project:nth-of-type(4), .experiences .experience:nth-of-type(2)  {
+        flex-direction: column-reverse;
+    }
+    
+    .project img {
+        width: 60%;
+        height: 60%;    
+        margin: 10px ;
+    }
+
+    .experiences .experience {
+        padding: 30px 50px;
+    }
+
+    .experience img{
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+        margin-bottom: 40px;
+    }
+
+    footer .icons {
+        flex-direction: column;
+    }
+
+    .competences {
+        height: 100%;
+    }
+
+    .competences .grid-competences {
+        grid-template-columns: auto;
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .competences .grid-competences .item {
+        height: 100%;
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .competences .grid-competences .item i {
+        margin-right: 20px ;
+    }
+
+    .info-competence {
+        display: inline !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-competence .percentage {
+        display: none;
+    }
+    
+    .project p, .experience p {
+        font-size: 16px;
+    }
+
+    .informations p:nth-of-type(1) {
+        font-size: 24px;
+    }
+
+    .informations p:nth-of-type(2) {
+        font-size: 50px;
+    }
+
+    .informations p:nth-of-type(3) {
+        font-size: 14px;
+    }
+
+    header {
+        height: 130%;
+    }
+
+    header a {
+        display: none;
+    }
+
+    .experience p .title {
+        font-size: 37px;
+    }
+
+    .experience .subtitle, .project .subtitle {
+        font-size: 19px;
+    }
+
+    .project .info {
+        margin: 10px 20px;
+    }
+
+    .experiences h1, .projects h1, .competences h1 {
+        font-size: 35px !important;
+        letter-spacing: 0.1 !important;
+        margin: 40px 0;
+        text-shadow: 3px 3px #999;
+    }
+}
+
+@media screen and ( min-width: 500px ) and ( max-width: 899px ) {
+    
+
+
+    .content .project, .experiences .experience {
+        flex-direction: column;
+    }
+
+    .projects {
+        width: 90%;
+        padding: 10px 30px;
+    }
+
+    .content .project:nth-of-type(2), .content .project:nth-of-type(4), .experiences .experience:nth-of-type(2)  {
+        flex-direction: column-reverse;
+    }
+    
+    .project img {
+        width: 60%;
+        height: 60%;    
+        margin: 10px ;
+    }
+
+    .experiences .experience {
+        padding: 60px 120px;
+    }
+
+    .experience img{
+        width: 80%;
+        height: 80%;
+        margin: 10px;
+        margin-bottom: 40px;
+    }
+
+    footer .icons {
+        flex-direction: column;
+    }
+
+    .competences .grid-competences {
+        grid-template-columns: auto auto auto;
+        margin-bottom: 50px;
+        width: 90%;
+    }
+    
+    .project p, .experience p {
+        font-size: 16px;
+    }
+
+    .informations p:nth-of-type(1) {
+        font-size: 27px;
+    }
+
+    .informations p:nth-of-type(2) {
+        font-size: 57px;
+    }
+
+    .informations p:nth-of-type(3) {
+        font-size: 14px;
+    }
+
+    .experience p .title {
+        font-size: 37px;
+    }
+
+    .experience .subtitle, .project .subtitle {
+        font-size: 19px;
+    }
+
+    .project .info {
+        margin: 10px 20px;
+    }
+
+    .experiences h1, .projects h1, .competences h1 {
+        font-size: 55px !important;
+    }
+}
+
+@media screen and ( min-width: 900px ) and ( max-width: 1150px ) {
+    .project img {
+        width: 40%;
+        height: 40%;    
+    }
+
+    .experience img{
+        width: 35%;
+        height: 35%;
+    }
+
+    .competences .grid-competences {
+        width: 90%;
+        margin-bottom: 60px;
+    }
+    
+    .project p, .experience p {
+        font-size: 16px;
+    }
+
+    .informations p:nth-of-type(1) {
+        font-size: 35px;
+    }
+
+    .informations p:nth-of-type(2) {
+        font-size: 80px;
+    }
+
+    .informations p:nth-of-type(3) {
+        font-size: 18px;
+    }
+
+    .experience .title {
+        font-size: 40px;
+    }
+
+    .experience .subtitle, .project .subtitle {
+        font-size: 19px;
+    }
+
+    .project .info {
+        margin: 10px 20px;
+    }
+}
 
 @media screen and ( min-width: 1151px ) and ( max-width: 1370px ) {
     .project img {
